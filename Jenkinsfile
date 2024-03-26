@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PYTHONPATH = "C:/Users/hp/PycharmProjects/pythonProject_beyondev_final"
+        PYTHONPATH = "C:/Users/hp/PycharmProjects/TERMINALX"
         TEST_REPORTS='test-reports'
     }
     stages {
