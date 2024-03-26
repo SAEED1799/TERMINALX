@@ -24,8 +24,7 @@ class LoginPage(Base_Page):
                                                             "1]/div/form/div[1]/div/input")
         password_field = self._driver.find_element(By.XPATH, "//*[@id='panel-root']/div/div[3]/div/div/div/div[3]/div["
                                                             "1]/div/form/div[2]/div/input")
-        submit_button = self._driver.find_element(By.XPATH, "//*[@id='panel-root']/div/div[3]/div/div/div/div[3]/div["
-                                                           "1]/div/form/div[3]/button")
+        submit_button = self._driver.find_element(By.XPATH, "//button[@data-test-id='qa-login-submit']")
         time.sleep(5)
         username_field.send_keys("saeed.esawi99@gmail.com")  # Replace 'your_username' with actual username
         password_field.send_keys("1234@Saeed")  # Replace 'your_password' with actual password
